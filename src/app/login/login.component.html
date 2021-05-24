@@ -1,18 +1,22 @@
+<mat-card>
+  <h1>Spots</h1>
 <form [formGroup]="loginForm" (ngSubmit)="submitForm()">
-    <div class="columns is-centered">
-      <div class="column has-text-centered">
-          <input matInput placeholder="Gebruikersnaam" formControlName="username">
-      </div>
-    </div>
-    <div class="columns is-centered">
-      <div class="column has-text-centered">
-          <input type="password" matInput placeholder="Wachtwoord" formControlName="password">
-      </div>
-    </div>
-    <div class="columns is-centered">
-      <div class="column has-text-centered">
-        <button type="submit" mat-raised-button>Login</button>
-        <p style="color: red; padding-top: 1%;">{{error}}</p>
-      </div>
-    </div>
-  </form>
+  <mat-form-field class="example-full-width">
+    <mat-label>Email</mat-label>
+    <input type="email" matInput formControlName="username" 
+           placeholder="Ex. pat@example.com">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Password</mat-label>
+    <input type="email" matInput formControlName="password" type="password">
+  </mat-form-field>
+
+
+
+  <!-- <input matInput placeholder="Gebruikersnaam" formControlName="username"> -->
+  <!-- <input type="password" matInput placeholder="Wachtwoord" formControlName="password"> -->
+  <button type="submit" mat-raised-button color="primary">Login</button>
+  <p style="color: red; padding-top: 1%;">{{error}}</p>
+</form>
+</mat-card>
