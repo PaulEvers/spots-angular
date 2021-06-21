@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "spots-f2460": {
+      "hosting": {
+        "spots-angular": [
+          "spots-f2460"
+        ]
+      }
+    }
+  }
+}
